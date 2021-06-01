@@ -12,7 +12,6 @@ if(isset($_POST['cadastrar_venda'])){
     $valor_unitario = $_POST['valor_unitario'];
     $valor_total = $_POST['valor_total'];
 
-
     if($quantidade == 0 || $valor_unitario == 0|| $valor_total == 0){
         $_SESSION['message'] = "Venda não cadastrada! Verifique os campos do formulário!";
         $_SESSION['msg_type'] = "danger";
@@ -38,7 +37,6 @@ if(isset($_POST['cadastrar_venda'])){
                 $mysqli->query("UPDATE produtos SET estoque='$estoque',total_vendas='$total_vendas', data_ultima_venda='$data_ultima_venda'
                             WHERE id=$id") or die($mysqli->error());
             }
-
         }
 
         $mysqli->query("INSERT INTO vendas (produto, quantidade, valor_unitario, valor_total_venda) 

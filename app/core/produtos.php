@@ -29,8 +29,6 @@ if(isset($_POST['cadastrar_produto'])){
 
     header("location: ../../produtos.php");
     }
-
-    
 }
 
 if(isset($_GET['deletar_produto'])){
@@ -76,9 +74,7 @@ if(isset($_POST['alterar_produto'])){
         $_SESSION['msg_type'] = "success";
 
         header("location: ../../produtos.php");
-    }
-
-    
+    } 
 }
 
 if(isset($_GET['reciclar_produto'])){
@@ -101,8 +97,4 @@ if(isset($_GET['reciclar_produto'])){
         header("location: ../../produtos-excluidos.php");
     }
 }
-
-    
-
-
 ?>

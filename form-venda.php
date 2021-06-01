@@ -164,7 +164,7 @@
                             <input type="checkbox" name="atualizar_valor_unitario" class="custom-control-input" name="example-checkbox1" value="option1" checked>
                             <span class="custom-control-label">Atualizar valor unitário do produto</span>
                           </label>
-			</div>
+			                  </div>
                       </div>
                     </div>                    
                   </div>
